@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f8ff"
+    tools:context=".Domov"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <!-- Top circular shape -->
+    <FrameLayout
+        android:id="@+id/top_shape"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </FrameLayout>
+
+
+    <!-- Menu bar -->
+    <LinearLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:background="@drawable/top_shape"
+        android:orientation="horizontal"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:paddingTop="5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Menu items -->
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="30dp"
+
+            android:layout_weight="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="31dp"
+            android:layout_height="30dp"
+            android:scaleType="centerInside"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:stateListAnimator="@animator/image_animation"
+            android:src="@drawable/user_img" />
+
+        <ImageView
+            android:id="@+id/zgodovina"
+            android:layout_width="30dp"
+
+            android:layout_weight="0"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="31dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerInside"
+            android:stateListAnimator="@animator/image_animation"
+
+            android:src="@drawable/ic_baseline_history_24" />
+
+        <!-- Center icon with blue circular background and shadow -->
+
+
+        <ImageView
+            android:id="@+id/parking"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+
+            android:layout_marginTop="5dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/circular_background"
+            android:clickable="true"
+            android:contentDescription="@string/appbar_scrolling_view_behavior"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+
+            android:src="@drawable/ic_baseline_local_parking_24"
+            android:stateListAnimator="@animator/image_animation" />
+
+        <ImageView
+            android:id="@+id/zemljevid"
+            android:layout_width="30dp"
+
+            android:layout_marginRight="50dp"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="31dp"
+            android:layout_height="30dp"
+            android:scaleType="centerInside"
+            android:stateListAnimator="@animator/image_animation"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_map_24" />
+
+        <ImageView
+            android:id="@+id/nastavitve"
+            android:layout_width="30dp"
+            android:layout_marginTop="31dp"
+            android:layout_height="30dp"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:layout_marginRight="30dp"
+            android:focusable="true"
+
+            android:scaleType="centerInside"
+            android:stateListAnimator="@animator/image_animation"
+
+            android:src="@drawable/ic_baseline_settings_24"
+            android:contentDescription="settings" />
+
+    </LinearLayout>
+
+    <!-- Bottom circular shape -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

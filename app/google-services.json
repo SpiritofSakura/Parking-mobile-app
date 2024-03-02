@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "136092324778",
+    "project_id": "aksp-d6db2",
+    "storage_bucket": "aksp-d6db2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136092324778:android:c3e3d6f34cbc7597e551d3",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136092324778-6rjh8immnaue486e4oh29egt18qts96p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZBWC0ZvUZ7G5EDhUiCiIME9Ify8r3lZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136092324778-6rjh8immnaue486e4oh29egt18qts96p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

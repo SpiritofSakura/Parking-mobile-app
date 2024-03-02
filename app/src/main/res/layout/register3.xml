@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+
+    <TextView
+        android:fontFamily="@font/extrabold"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Podatki o vozilu"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/license_plate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/ic_outline_directions_car_24"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/pisava_normal"
+        android:hint="Registrksa številka"
+        android:maxLength="10"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:inputType="text|textCapCharacters"
+        android:paddingRight="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/car_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/ic_outline_car_rental_24"
+        android:hint="ID vozila"
+        android:paddingLeft="15dp"
+        android:drawablePadding="15dp"
+        android:paddingTop="12dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="12dp"
+        android:inputType="text|textCapCharacters"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:maxLength="17"
+        android:fontFamily="@font/pisava_normal"
+        >
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/drzava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/ic_outline_flag_24"
+        android:hint="Država"
+        android:inputType="textPersonName"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="50"
+        android:paddingTop="12dp"
+        android:drawablePadding="15dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="10dp"
+        android:fontFamily="@font/pisava_normal"
+        android:paddingLeft="15dp">
+
+
+    </EditText>
+
+
+
+
+    <EditText
+        android:id="@+id/model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/rounded"
+        android:paddingTop="12dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="12dp"
+        android:maxLength="50"
+        android:hint="Model vozila"
+        android:paddingRight="10dp"
+        android:drawableLeft="@drawable/ic_outline_car_crash_24"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/pisava_normal"
+        android:inputType="textCapWords|textAutoCorrect"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 -_.">
+        <!--        android:stateListAnimator="@drawable/text_animation"-->
+    </EditText>
+
+
+    <Button
+        android:id="@+id/btn_koncano"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_nazaj2"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#728fce"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:stateListAnimator="@drawable/button_animation"
+        android:text="Potrdi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"></Button>
+
+    <Button
+        android:id="@+id/btn_nazaj2"
+
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:stateListAnimator="@drawable/button_animation"
+        android:text="Nazaj"
+        android:textAllCaps="false"
+        android:textColor="#728fce"
+        android:textSize="20sp"></Button>
+
+
+    <TextView
+        android:id="@+id/domov3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="690dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:stateListAnimator="@drawable/button_animation"
+        android:text="Domov"
+        android:textColor="#728fce"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
